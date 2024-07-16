@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+## Project goals
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a minimal ReactJS project designed for showcasing a personal portfolio and blogging purposes. The goal of this project is to provide a clean, simple, and efficient platform for individuals to display their work and share blog posts.
 
 ## Available Scripts
 
