@@ -1,31 +1,27 @@
 import React, { useEffect, useState } from 'react';
 import './AboutMe.style.css';
 import { marked } from 'marked';
+import { fetchSummary, fetchProjects, fetchSkills, fetchExperience, fetchContact } from '../../fetchers/portfolio.fetcher';
+
 
 const AboutMe = () => {
-    const [aboutMe, setAboutMe] = useState('');
+    const [summary, setSummary] = useState('');
     const [projects, setProjects] = useState('');
     const [skills, setSkills] = useState('');
     const [experience, setExperience] = useState('');
     const [contact, setContact] = useState('');
 
-    // TODO: fix duplicate fetch
+    const loadContent = async (getContent, setContent) => {
+        const content = await getContent();
+        setContent(marked.parse(content));
+    }
+
     useEffect(() => {
-        fetch('/data/portfolio/about_me.md')
-            .then(response => response.text())
-            .then(text => setAboutMe(marked.parse(text)));
-        fetch('/data/portfolio/projects.md')
-            .then(response => response.text())
-            .then(text => setProjects(marked.parse(text)));
-        fetch('/data/portfolio/skills.md')
-            .then(response => response.text())
-            .then(text => setSkills(marked.parse(text)));
-        fetch('/data/portfolio/experience.md')
-            .then(response => response.text())
-            .then(text => setExperience(marked.parse(text)));
-        fetch('/data/portfolio/contact.md')
-            .then(response => response.text())
-            .then(text => setContact(marked.parse(text)));
+        loadContent(fetchSummary, setSummary);
+        loadContent(fetchProjects, setProjects);
+        loadContent(fetchSkills, setSkills);
+        loadContent(fetchExperience, setExperience);
+        loadContent(fetchContact, setContact);
     }, []);
 
     return (
@@ -38,10 +34,12 @@ const AboutMe = () => {
                 </div>
             </section>
 
-            <section id="about" className="about">
-                <h2>About Me</h2>
-                <div className="about-me-cards">
-                    <main dangerouslySetInnerHTML={{ __html: aboutMe }} />
+            <section id="summary" className="summary">
+                <h2>Summary</h2>
+                <div className="summary-cards">
+                    {
+                        summary ? <main dangerouslySetInnerHTML={{ __html: summary }} />: <p>Loading...</p>
+                    }
                 </div>
             </section>
 

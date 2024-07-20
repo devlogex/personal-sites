@@ -45,7 +45,7 @@ section {
     text-align: center;
 }
 
-.about, .projects, .skills, .experience, .contact {
+.summary, .projects, .skills, .experience, .contact {
     background: #f4f4f4;
     margin: 20px 0;
 }
