@@ -1,3 +1,8 @@
+export const fetchBio = async () => {
+    const res = await fetch('/data/portfolio/bio.md');
+    const data = await res.text();
+    return data;
+}
 
 export const fetchSummary = async () => {
     const res = await fetch('/data/portfolio/summary.md');

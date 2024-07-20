@@ -1,19 +1,21 @@
 import React from 'react';
 import './NavBar.style.css';
 
-const NavBar = () => {
+const NavBar = ({ logo = '', items = [] }) => {
     const [isNavLinkVisible, setIsNavLinkVisible] = React.useState(false);
     const handleBurgerClick = () => {
         setIsNavLinkVisible(!isNavLinkVisible);
     }
 
+    const navItems = items.map((item, index) =>  (
+            <li key={index}><a href={item.link}>{item.name}</a></li>
+    ));
+
     return (
         <nav className="navbar">
-            <div className="logo">Haku</div>
+            <div className="logo"><a href='/'>{logo}</a></div>
             <ul className={`nav-links ${isNavLinkVisible ? 'nav-active' : ''}`}>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                {navItems}
             </ul>
             <div className="burger" onClick={handleBurgerClick}>
                 <div className="line1"></div>
