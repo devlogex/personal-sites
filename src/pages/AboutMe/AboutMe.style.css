@@ -31,14 +31,6 @@ body {
     margin-bottom: 30px;
 }
 
-.btn {
-    background: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 /* Section Styles */
 section {
     padding: 60px 20px;

@@ -9,6 +9,7 @@ import {
   fetchExperience,
   fetchContact,
 } from "../../fetchers/portfolio.fetcher";
+import { ButtonLink } from "../../components/button";
 
 const AboutMe = () => {
   const [bio, setBio] = useState("");
@@ -41,9 +42,7 @@ const AboutMe = () => {
           ) : (
             <p>Loading...</p>
           )}
-          <a href="#contact" className="btn">
-            Contact Me
-          </a>
+          <ButtonLink href="#contact">Contact Me</ButtonLink>
         </div>
       </section>
 
