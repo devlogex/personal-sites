@@ -9,6 +9,7 @@ const AboutMe = () => {
     const [experience, setExperience] = useState('');
     const [contact, setContact] = useState('');
 
+    // TODO: fix duplicate fetch
     useEffect(() => {
         fetch('/data/portfolio/about_me.md')
             .then(response => response.text())
