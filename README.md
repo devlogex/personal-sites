@@ -14,7 +14,6 @@ Update these markdown files:
 - [public/data/portfolio/skills.md](https://github.com/devlogex/personal-sites/blob/main/public/data/portfolio/projects.md)
 - [public/data/portfolio/contact.md](https://github.com/devlogex/personal-sites/blob/main/public/data/portfolio/contact.md)
 
-## Development
 
 ### Start project
 
@@ -26,7 +25,7 @@ npm run start
 See website on: http://localhost:3000
 
 
-### Coding agreements
+## Coding agreements
 
 - Format code by Prettier plugin
 - [Code Splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
