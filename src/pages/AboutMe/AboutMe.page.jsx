@@ -86,7 +86,7 @@ const AboutMe = () => {
       </section>
 
       <footer>
-        <p>&copy; 2024 Haku. All rights reserved.</p>
+        <p>&copy; 2024 Devlogex. All rights reserved.</p>
       </footer>
     </div>
   );

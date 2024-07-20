@@ -5,7 +5,7 @@ function App () {
   return (
     <div className='App'>
       <NavBar
-        logo='HAKU'
+        logo='DEVLOGEX'
         items={[
           { name: 'About', link: '#summary' },
           { name: 'Projects', link: '#projects' },
