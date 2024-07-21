@@ -46,9 +46,8 @@ const AboutMe = () => {
         </div>
       </section>
 
-      <section id="summary" className="summary">
-        <h2>Summary</h2>
-        <div className="summary-cards">
+      <section id="summary" className="portfolio-card">
+        <div className="portfolio-content">
           {summary ? (
             <main dangerouslySetInnerHTML={{ __html: summary }} />
           ) : (
@@ -57,31 +56,43 @@ const AboutMe = () => {
         </div>
       </section>
 
-      <section id="projects" className="projects">
-        <h2>Projects</h2>
-        <div className="project-cards">
-          <main dangerouslySetInnerHTML={{ __html: projects }} />
+      <section id="projects" className="portfolio-card">
+        <div className="portfolio-content">
+          {projects ? (
+            <main dangerouslySetInnerHTML={{ __html: projects }} />
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </section>
 
-      <section id="skills" className="skills">
-        <h2>Skills</h2>
-        <div className="skill-list">
-          <main dangerouslySetInnerHTML={{ __html: skills }} />
+      <section id="skills" className="portfolio-card">
+        <div className="portfolio-content">
+          {skills ? (
+            <main dangerouslySetInnerHTML={{ __html: skills }} />
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </section>
 
-      <section id="experience" className="experience">
-        <h2>Experience</h2>
-        <div className="experience-timeline">
-          <main dangerouslySetInnerHTML={{ __html: experience }} />
+      <section id="experience" className="portfolio-card">
+        <div className="portfolio-content">
+          {experience ? (
+            <main dangerouslySetInnerHTML={{ __html: experience }} />
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </section>
 
-      <section id="contact" className="contact">
-        <h2>Contact</h2>
-        <div className="contact-link">
-          <main dangerouslySetInnerHTML={{ __html: contact }} />
+      <section id="contact" className="portfolio-card">
+        <div className="portfolio-content">
+          {contact ? (
+            <main dangerouslySetInnerHTML={{ __html: contact }} />
+          ) : (
+            <p>Loading...</p>
+          )}
         </div>
       </section>
 
