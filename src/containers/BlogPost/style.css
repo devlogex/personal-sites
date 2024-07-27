@@ -1,0 +1,11 @@
+.blog-post {
+  padding: 20px;
+}
+
+.blog-post h1 {
+  margin-top: 0;
+}
+
+.blog-post p {
+  margin: 5px 0;
+}

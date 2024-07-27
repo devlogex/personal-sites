@@ -1,0 +1,16 @@
+.blog-list {
+  padding: 20px;
+}
+
+.blog-post-summary {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.blog-post-summary h2 {
+  margin: 0;
+}
+
+.blog-post-summary p {
+  margin: 5px 0;
+}

@@ -8,8 +8,8 @@ import {
   fetchSkills,
   fetchExperience,
   fetchContact,
-} from "../../fetchers/portfolio.fetcher";
-import { ButtonLink } from "../../components/button";
+} from "@/fetchers";
+import { ButtonLink } from "@/components";
 
 const AboutMe = () => {
   const [bio, setBio] = useState("");
