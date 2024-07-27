@@ -1,20 +1,21 @@
-import NavBar from './components/navbar'
-import AboutMe from './pages/AboutMe/AboutMe.page'
+import NavBar from "./components/navbar";
+import AboutMe from "./pages/AboutMe/AboutMe.page";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-function App () {
+function App() {
   return (
-    <div className='App'>
-      <NavBar
-        logo='DEVLOGEX'
-        items={[
-          { name: 'About', link: '#summary' },
-          { name: 'Projects', link: '#projects' },
-          { name: 'Contact', link: '#contact' }
-        ]}
-      />
-      <AboutMe />
+    <div className="App">
+      <Router>
+        <div>
+          <NavBar logo="DEVLOGEX" items={[{ name: "About", link: "/about" }]} />
+          <Routes>
+            <Route path="/" element={<div>HomePage</div>} />
+            <Route path="/about" element={<AboutMe />} />
+          </Routes>
+        </div>
+      </Router>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
