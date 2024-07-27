@@ -11,8 +11,8 @@ function App() {
           <NavBar
             logo="DEVLOGEX"
             items={[
-              { name: "About", link: "/about" },
               { name: "Blog", link: "/blog" },
+              { name: "About", link: "/about" },
             ]}
           />
           <Routes>
