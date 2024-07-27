@@ -16,7 +16,7 @@ function App() {
             ]}
           />
           <Routes>
-            <Route path="/" element={<div>HomePage</div>} />
+            <Route path="/" element={<BlogList />} />
             <Route path="/about" element={<AboutMe />} />
             <Route path="/blog" element={<BlogList />} />
             <Route path="/blog/:postId" element={<BlogPost />} />
