@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 const NavBar = ({ logo = "", items = [] }) => {
@@ -35,7 +36,7 @@ const NavBar = ({ logo = "", items = [] }) => {
 
   const navItems = items.map((item, index) => (
     <li key={index} onClick={handleItemClick}>
-      <a href={item.link}>{item.name}</a>
+      <Link to={item.link}>{item.name}</Link>
     </li>
   ));
 
