@@ -1,4 +1,4 @@
-import { NavBar } from "@/components";
+import { Footer, NavBar } from "@/components";
 import { AboutMe } from "@/pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BlogList, BlogPost } from "./containers";
@@ -21,6 +21,7 @@ function App() {
             <Route path="/blog" element={<BlogList />} />
             <Route path="/blog/:postId" element={<BlogPost />} />
           </Routes>
+          <Footer />
         </div>
       </Router>
     </div>

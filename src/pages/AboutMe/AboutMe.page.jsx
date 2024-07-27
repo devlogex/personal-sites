@@ -9,7 +9,7 @@ import {
   fetchExperience,
   fetchContact,
 } from "@/fetchers";
-import { ButtonLink } from "@/components";
+import { ButtonLink, Loading } from "@/components";
 
 const AboutMe = () => {
   const [bio, setBio] = useState("");
@@ -37,68 +37,52 @@ const AboutMe = () => {
     <div id="about-me">
       <section className="hero">
         <div className="hero-content">
-          {bio ? (
+          <Loading isLoading={!bio}>
             <main dangerouslySetInnerHTML={{ __html: bio }} />
-          ) : (
-            <p>Loading...</p>
-          )}
+          </Loading>
           <ButtonLink href="#contact">Contact Me</ButtonLink>
         </div>
       </section>
 
       <section id="summary" className="portfolio-card">
         <div className="portfolio-content">
-          {summary ? (
+          <Loading isLoading={!summary}>
             <main dangerouslySetInnerHTML={{ __html: summary }} />
-          ) : (
-            <p>Loading...</p>
-          )}
+          </Loading>
         </div>
       </section>
 
       <section id="projects" className="portfolio-card">
         <div className="portfolio-content">
-          {projects ? (
+          <Loading isLoading={!projects}>
             <main dangerouslySetInnerHTML={{ __html: projects }} />
-          ) : (
-            <p>Loading...</p>
-          )}
+          </Loading>
         </div>
       </section>
 
       <section id="skills" className="portfolio-card">
         <div className="portfolio-content">
-          {skills ? (
+          <Loading isLoading={!skills}>
             <main dangerouslySetInnerHTML={{ __html: skills }} />
-          ) : (
-            <p>Loading...</p>
-          )}
+          </Loading>
         </div>
       </section>
 
       <section id="experience" className="portfolio-card">
         <div className="portfolio-content">
-          {experience ? (
+          <Loading isLoading={!experience}>
             <main dangerouslySetInnerHTML={{ __html: experience }} />
-          ) : (
-            <p>Loading...</p>
-          )}
+          </Loading>
         </div>
       </section>
 
       <section id="contact" className="portfolio-card">
         <div className="portfolio-content">
-          {contact ? (
+          <Loading isLoading={!contact}>
             <main dangerouslySetInnerHTML={{ __html: contact }} />
-          ) : (
-            <p>Loading...</p>
-          )}
+          </Loading>
         </div>
       </section>
-
-      <footer>
-        <p>&copy; 2024 Devlogex. All rights reserved.</p>
-      </footer>
     </div>
   );
 };
