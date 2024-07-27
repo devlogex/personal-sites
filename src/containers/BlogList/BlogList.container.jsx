@@ -16,7 +16,7 @@ const BlogList = () => {
   }, []);
 
   return (
-    <div className="blog-list container">
+    <div className="container" id="blog-list">
       {posts.map((post, index) => (
         <div key={index} className="blog-post-summary">
           <h2>{post.title}</h2>

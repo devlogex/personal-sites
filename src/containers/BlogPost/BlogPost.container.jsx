@@ -19,7 +19,7 @@ const BlogPost = () => {
   if (!post) return <p>Loading...</p>;
 
   return (
-    <div className="blog-post container">
+    <div className="container" id="blog-post">
       <h1>{post.title}</h1>
       <p>
         {post.date} by {post.author}

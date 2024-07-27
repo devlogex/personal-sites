@@ -34,7 +34,7 @@ const AboutMe = () => {
   }, []);
 
   return (
-    <div>
+    <div id="about-me">
       <section className="hero">
         <div className="hero-content">
           {bio ? (
