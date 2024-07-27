@@ -27,7 +27,7 @@ const BlogList = () => {
             <p>
               {post.date} by {post.author}
             </p>
-            <p>Tags: {post.tags.join(", ")}</p>
+            <p>Tags: {post.tags?.join(", ")}</p>
             <Link to={`/blog/${index}`}>Read More</Link>
           </div>
         ))}
