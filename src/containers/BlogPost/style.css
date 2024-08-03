@@ -6,6 +6,10 @@
   margin-top: 0;
 }
 
+#blog-content h2 h3 h4 h5 {
+  margin-top: 40px;
+}
+
 #blog-post p {
   margin: 5px 0;
 }
