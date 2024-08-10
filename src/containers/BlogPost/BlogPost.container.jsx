@@ -25,7 +25,7 @@ const BlogPost = () => {
         {post.date} by {post.author}
       </p>
       <p>Tags: {post.tags?.join(", ")}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.content }} />
+      <div id="blog-content" dangerouslySetInnerHTML={{ __html: post.content }} />
     </div>
   );
 };
