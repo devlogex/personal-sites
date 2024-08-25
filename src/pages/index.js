@@ -1,2 +1,2 @@
-export { AboutMe } from "./AboutMe";
-export { HomePage } from "./HomePage";
+export { default as HomePage } from "./HomePage/HomePage.page";
+export { default as BlogPage } from "./BlogPage/BlogPage.page";

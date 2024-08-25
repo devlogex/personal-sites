@@ -8,9 +8,11 @@ function Header() {
 
   useEffect(() => {
     if (location.pathname === "/") {
-      setShowSlider(true);
+      if (!showSlider) {
+        setShowSlider(true);
+      }
     }
-  }, [location.pathname]);
+  }, [location.pathname, showSlider]);
 
   const slider = (
     <section className=" slider_section position-relative">
@@ -108,7 +110,7 @@ function Header() {
   );
 
   return (
-    <div className="hero_area">
+    <div className={`hero_area ${showSlider ? "show_slider" : ""}`}>
       <header className="header_section">
         <div className="container">
           <nav className="navbar navbar-expand-lg custom_nav-container pt-3">

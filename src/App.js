@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Footer, Header } from "@/components";
-import { HomePage } from "./pages";
+import { BlogPage, HomePage } from "@/pages";
 
 function App() {
   return (
@@ -10,6 +10,7 @@ function App() {
           <Header />
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/blog" element={<BlogPage />} />
           </Routes>
           <Footer />
         </div>

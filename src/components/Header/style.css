@@ -1,12 +1,12 @@
 /*header section*/
 .hero_area {
-  height: 100vh;
+  height: auto;
   background-image: url(/public/images/hero-bg.jpg);
   background-size: cover;
 }
 
-.sub_page .hero_area {
-  height: auto;
+.show_slider {
+  height: 100vh !important;
 }
 
 .header_section .container-fluid {
