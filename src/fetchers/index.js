@@ -7,4 +7,5 @@ export {
   fetchSummary,
 } from "./portfolio.fetcher";
 
-export { fetchBlogPosts } from "./blogPost.fetcher";
+export { fetchBlogPosts, fetchBlogPost } from "./blogPost.fetcher";
+

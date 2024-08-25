@@ -22,3 +22,11 @@ export const fetchBlogPosts = async () => {
 
   return posts;
 };
+
+export const fetchBlogPost = async (slug) => {
+  const response = await fetch(`/data/posts/${slug}.md`);
+  const text = await response.text();
+  const { data, content } = matter(text);
+  const htmlContent = marked(content);
+  return { ...data, content: htmlContent };
+};
