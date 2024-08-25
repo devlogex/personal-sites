@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./AboutMe.style.css";
+import "./style.css";
 import { marked } from "marked";
 import {
   fetchBio,

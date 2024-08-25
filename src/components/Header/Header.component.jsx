@@ -12,8 +12,6 @@ function Header() {
     }
   }, [location.pathname]);
 
-  console.log(location.pathname);
-
   const slider = (
     <section className=" slider_section position-relative">
       <div

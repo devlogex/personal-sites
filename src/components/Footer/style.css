@@ -1,0 +1,21 @@
+/* footer section*/
+footer {
+  font-weight: 500;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1d1d1d;
+}
+
+footer p {
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+/* end footer section*/
