@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Footer, Header } from "@/components";
-import { BlogPage, HomePage, PostPage } from "@/pages";
+import { Footer } from "@/components";
+import { AboutPage, BlogPage, PostPage } from "@/pages";
+import { Header } from "./containers";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
         <div>
           <Header />
           <Routes>
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<AboutPage />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/blog/:slug" element={<PostPage />} />
           </Routes>

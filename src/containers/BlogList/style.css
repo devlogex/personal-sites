@@ -14,3 +14,25 @@
 .blog-post-summary p {
   margin: 5px 0;
 }
+
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+
+.section {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.section .heading {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (max-width: 991.98px) {
+  .section .heading {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,86 @@
+.post-entry {
+  position: relative;
+}
+
+.post-entry img {
+  border-radius: 7px;
+}
+
+.post-entry .heading a {
+  color: #222;
+}
+
+.post-entry .thumbnail {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 440px;
+  flex: 0 0 440px;
+}
+
+.post-entry .date {
+  color: #999;
+}
+
+.post-entry .post-author .author-pic {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 45px;
+  flex: 0 0 45px;
+  margin-right: 10px;
+}
+
+.post-entry .post-author .author-pic img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.post-entry .post-author strong {
+  font-weight: 400;
+  color: #000;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+.post-entry .post-author span {
+  font-size: 13px;
+  color: #888;
+}
+
+.post-entry .post-meta .category {
+  color: #222;
+  font-weight: 600;
+}
+
+.post-entry.small-post-entry-v .thumbnail {
+  -webkit-box-flex: 0 !important;
+  -ms-flex: 0 0 100% !important;
+  flex: 0 0 100% !important;
+  margin-bottom: 30px;
+}
+
+.post-entry.small-post-entry-v .heading {
+  font-size: 18px;
+}
+
+.post-entry.small-horizontal .thumbnail {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 250px;
+  flex: 0 0 250px;
+}
+
+.post-entry.small-horizontal .heading {
+  font-size: 20px;
+}
+
+.post-entry.xsmall-horizontal .thumbnail {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 150px;
+  flex: 0 0 150px;
+}
+
+.post-entry.xsmall-horizontal .heading {
+  font-size: 20px;
+}
+
+.post-section .author-pic {
+  width: 70px;
+}

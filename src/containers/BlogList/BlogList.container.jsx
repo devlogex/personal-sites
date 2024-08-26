@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { fetchBlogPosts } from "@/fetchers";
-import { Loading } from "@/components";
+import { Loading, PostItem } from "@/components";
 import "./style.css";
 
 const BlogList = () => {
@@ -20,18 +20,19 @@ const BlogList = () => {
 
   return (
     <div className="container" id="blog-list">
-      <Loading isLoading={loading}>
-        {posts.map((post, index) => (
-          <div key={index} className="blog-post-summary">
-            <h2>{post.title}</h2>
-            <p>
-              {post.date} by {post.author}
-            </p>
-            <p>Tags: {post.tags?.join(", ")}</p>
-            <Link to={`/blog/${index}`}>Read More</Link>
+      <div id="blog-page">
+        <div className="section">
+          <div className="container">
+            <div className="row">
+              <Loading isLoading={loading}>
+                {posts.map((post, index) => (
+                  <PostItem key={index} post={post} />
+                ))}
+              </Loading>
+            </div>
           </div>
-        ))}
-      </Loading>
+        </div>
+      </div>
     </div>
   );
 };
