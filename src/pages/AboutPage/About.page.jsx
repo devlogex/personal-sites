@@ -101,7 +101,11 @@ const AboutPage = () => {
             <h2>Contact Me</h2>
           </div>
           <div className="box">
-            <a href="https://www.linkedin.com/in/devlogex/" rel="nofollow">
+            <a
+              href="https://www.linkedin.com/in/devlogex/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="images/linkedin.png"
                 alt=""
@@ -109,7 +113,11 @@ const AboutPage = () => {
                 className="img-1"
               />
             </a>
-            <a href="https://github.com/devlogex" rel="nofollow">
+            <a
+              href="https://github.com/devlogex"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src="images/github.png"
                 alt=""

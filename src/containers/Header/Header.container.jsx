@@ -10,9 +10,6 @@ function Header() {
   const [showSlider, setShowSlider] = useState(false);
 
   useEffect(() => {
-    console.log("location.pathname", location.pathname);
-    console.log("SHOW_SLIDER_PAGES", showSlider);
-    console.log(SHOW_SLIDER_PAGES.includes(location.pathname));
     if (SHOW_SLIDER_PAGES.includes(location.pathname)) {
       !showSlider && setShowSlider(true);
     } else {

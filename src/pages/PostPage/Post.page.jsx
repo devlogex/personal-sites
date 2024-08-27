@@ -12,7 +12,6 @@ const PostPage = (props) => {
     const loadPost = async () => {
       const post = await fetchBlogPost(slug);
       setPost(post);
-      console.log(post);
     };
 
     loadPost();

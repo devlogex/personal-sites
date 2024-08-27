@@ -1,8 +1,11 @@
 ---
 title: "My First Blog Post"
+slug: "template"
 date: "2024-07-22"
-author: "Haku"
-tags: ["React", "JavaScript", "Web Development"]
+author: "Devlogex"
+description: "This is an example"
+image: "assets/img_2.jpg"
+tags: ["template", "example"]
 ---
 
 ## Introduction
