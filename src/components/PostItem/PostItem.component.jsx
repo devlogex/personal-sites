@@ -1,9 +1,9 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
+import { formatDate } from "@/utils/common.utils";
 
 const PostItem = ({ post }) => {
-  console.log(post.tags);
   return (
     <div className="col-lg-4 mb-5">
       <div className="post-entry d-block small-post-entry-v">
@@ -17,7 +17,7 @@ const PostItem = ({ post }) => {
             <Link to={`/blog/${post.slug}`}>{post.title}</Link>
           </h2>
           <div className="post-meta mb-1">
-            <span className="date">July 2, 2020</span>
+            <span className="date">{formatDate(post.date)}</span>
           </div>
           <p>{post.description}</p>
         </div>
